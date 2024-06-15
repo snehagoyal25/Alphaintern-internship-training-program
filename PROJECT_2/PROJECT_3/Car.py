@@ -8,7 +8,6 @@ from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-
 df = pd.read_csv('C:/Users/goyal/OneDrive/Documents/car.csv')
 
 df.dropna(subset=['selling_price'], inplace=True)
@@ -66,3 +65,4 @@ if car_details.empty:
 else:
  print("Car Details:")
 print(car_details)
+
