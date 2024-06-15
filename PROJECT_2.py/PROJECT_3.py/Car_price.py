@@ -50,7 +50,9 @@ y_pred = pipeline.predict(X_test)
 mae = mean_absolute_error(y_test, y_pred)
 mse = mean_squared_error(y_test, y_pred)
 rmse = np.sqrt(mse)
-
+# print(f"Mean Absolute Error (MAE): {mae}")
+# print(f"Mean Squared Error (MSE): {mse}")
+# print(f"Root Mean Squared Error (RMSE): {rmse}")
 def get_car_details_by_name(car_name):
  car_details = df[df['name'].str.contains(car_name, case=False)]
  return car_details
